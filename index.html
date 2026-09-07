@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Your Name — Portfolio</title>
+  <meta name="description" content="Engineering portfolio and project showcase." />
+  <link rel="icon" href="data:," />
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+  <header class="site-header">
+    <div class="container header-inner">
+      <a href="#top" class="logo" id="logo-name">YN</a>
+      <nav class="nav">
+        <a href="#about">About</a>
+        <a href="#projects">Projects</a>
+        <a href="#contact">Contact</a>
+      </nav>
+      <button id="theme-toggle" class="theme-toggle" aria-label="Toggle dark mode" title="Toggle dark mode">🌙</button>
+    </div>
+  </header>
+
+  <main id="top">
+    <!-- HERO -->
+    <section class="hero container" id="about">
+      <div class="hero-avatar">
+        <img id="avatar-img" src="" alt="" hidden />
+        <span id="avatar-initials"></span>
+      </div>
+      <h1 id="hero-name">Your Name</h1>
+      <p class="hero-role" id="hero-role">Software Engineer</p>
+      <p class="hero-tagline" id="hero-tagline">Tagline goes here.</p>
+
+      <div class="hero-actions" id="hero-socials"></div>
+    </section>
+
+    <!-- ABOUT -->
+    <section class="section container">
+      <h2 class="section-title">About Me</h2>
+      <div class="about-grid">
+        <div class="about-text" id="about-text"></div>
+        <div class="about-meta">
+          <div class="meta-item">
+            <span class="meta-label">Location</span>
+            <span id="meta-location"></span>
+          </div>
+          <div class="meta-item">
+            <span class="meta-label">Email</span>
+            <a id="meta-email" href="#"></a>
+          </div>
+          <div class="meta-item" id="resume-wrap">
+            <a id="resume-link" class="btn btn-outline" href="#" target="_blank" rel="noopener">Download Resume</a>
+          </div>
+        </div>
+      </div>
+
+      <h3 class="skills-title">Skills</h3>
+      <div class="skills" id="skills-list"></div>
+    </section>
+
+    <!-- PROJECTS -->
+    <section class="section container" id="projects">
+      <h2 class="section-title">Projects</h2>
+      <div class="projects-grid" id="projects-grid"></div>
+    </section>
+
+    <!-- CONTACT -->
+    <section class="section container contact" id="contact">
+      <h2 class="section-title">Get in touch</h2>
+      <p>Interested in working together, or just want to say hi?</p>
+      <a class="btn btn-primary" id="contact-email-btn" href="#">Say Hello</a>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container">
+      <p id="footer-text">&copy; <span id="footer-year"></span> Your Name. Built with plain HTML, CSS & JS.</p>
+    </div>
+  </footer>
+
+  <!-- Lightbox for project media -->
+  <div class="lightbox" id="lightbox" hidden>
+    <button class="lightbox-close" id="lightbox-close" aria-label="Close">&times;</button>
+    <div class="lightbox-content" id="lightbox-content"></div>
+  </div>
+
+  <script src="data.js"></script>
+  <script src="script.js"></script>
+</body>
+</html>
